@@ -1,0 +1,284 @@
+
+*{
+margin:0px
+
+}
+body{
+    
+    background: url('../images/smiling-woman.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #1e0e08;
+}
+header{
+    /* border: 3px solid; */
+    justify-content: space-between;
+    /* align-items: center; */
+    display:flex;
+    flex-direction: row-reverse;
+    height: 60px;
+    position: sticky;
+    
+    /* border: 3px solid; */
+
+}
+nav{
+    display: flex;
+    margin-right:45px ;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    /* margin-left: 500px */
+}
+nav ul li a:hover{
+    color:#fc7405;
+    transition: 0.5s;
+}
+.logo-image{
+    width:150px;
+    height:75px;
+    margin-left: 130px;
+    
+   
+  
+}
+   
+
+.logo-image img{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    display:flex;
+    gap: 60px;
+    list-style: none;
+    
+}
+a{
+    color: #F3BB11;
+    text-decoration: solid;
+}
+.text-container{
+    
+    color: #F3BB11;
+   
+    width:650px;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10vh 700px;
+} 
+.p-hrname{
+    font-family: "Sacramento", cursive;
+    font-size: 65px;
+    font-weight: bold;
+    color: #fc7405;
+   
+}
+
+.p-heading{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    
+    background-size: 400px;
+    background-image: linear-gradient(to left, #F3BB11,#fc7405, #FFF200,#fc7405);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:animate 10s linear infinite;
+
+    
+}
+@keyframes animate{
+    0%{
+       background-position:  0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.p-details{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+  
+}
+
+
+/* colour picker for text #191310 * 1e0e08/
+
+
+/* Form.html styling starts here */
+/* Apply styles to body */
+/* .form-body .contact-body {
+  background-color: #f0f0f0; /* Set background color */
+  /* font-family: Arial, sans-serif; Set font
+}  */
+
+/* Apply styles to form container */
+/* form {
+  margin: 0 auto; /* Center align form */
+  /* max-width: 400px; Set maximum width */
+  /* padding: 20px; Add some padding */
+  /* background-color: #fff; Set background color */
+  /* border-radius: 10px; Add border radius */
+  /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); Add box shadow
+} */ 
+
+/* Apply styles to form headings */
+/* h4, p {
+  color: #333; /* Set text color */
+  /* margin-bottom: 10px; Add some spacing
+} */ 
+
+/* Apply styles to input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add some padding */
+  margin-bottom: 10px; /* Add some spacing */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+}
+
+/* Apply styles to file input */
+input[type="file"] {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add some padding */
+  margin-bottom: 10px; /* Add some spacing */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+}
+
+/* Apply styles to buttons */
+button {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add some padding */
+  margin-top: 10px; /* Add some spacing */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Add border radius */
+  background-color: #007bff; /* Set background color */
+  color: #fff; /* Set text color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Apply styles to radio buttons */
+input[type="radio"] {
+  margin-right: 5px; /* Add some spacing */
+}
+
+/* Apply styles to error messages */
+span {
+  color: red; /* Set text color to red */
+  font-size: 12px; /* Set font size */
+}
+
+
+
+/* Contact me styling page */
+/* Apply styles to body */
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+/* Apply styles to navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Apply styles to navigation links */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .navlinks {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+} */
+
+/* .navlinks:hover {
+  border-color: #333;
+} */
+
+/* Apply styles to social icons */
+.social-icons {
+padding-left: 7px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: xx-large;
+  gap: 10px;
+  margin: 0 auto;
+
+}
+
+.social-icons a {
+  color: #fc7405;
+  margin-right: 10px;
+  text-decoration: none;
+ 
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+/* Apply styles to heading */
+/* h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+} */
+
+.contactTextCtn {
+  width: 600px;
+  margin: 30vh 45vw;
+ 
+}
+.contactTextCtn  h1 {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+ 
+  
+
+}
+.formContainer {
+  margin: 17vh 45vw;
+  justify-content: center;
+  width: 500px;
+}
+.formContainer p{
+  color: #fc7405;
+  
+}
+.GenderPara {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.JobPara{
+  text-align: center;
+  font-size: x-large;
+}

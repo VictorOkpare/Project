@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>Application form</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./js/scripts.js"></script>
+</head>
+
+<body>
+ 
+
+  <header>
+    <nav >
+      <ul >
+        <li><a href="./index.html" class="navlinks"> HOME</a></li>
+        <li><a href="./contact.html" class="navlinks">CONTACT</a></li>
+        <li><a href="./form.html" class="navlinks">APPLICATION</a></li>
+      </ul>
+    </nav>
+    <div class="logo-image">
+      <a href="./index.html">
+      <img src="./images/Capture-removebg-preview (3).png" alt="logo-image" /></a>
+  </a>
+    </div>
+  </header>
+
+  <div class="formContainer">
+    <div class="JobPara">
+      <p> Job Application Form</p>
+      </div>
+    <form action="#" name="myForm" onsubmit="return personalValidate(event)">
+        <p>Enter your name:</p>
+        <div><input type="text" id="user" placeholder="Username"><br>
+      <span id="message"></span>
+    </div>
+
+    <p>Please enter your gender:</p>
+    <div class="GenderPara">
+    <p>Male:</p> <input type="radio" id="male" name="gender" value="male">
+   
+    <p>Female:</p><input type="radio" id="female" name="gender" value="female">
+    
+    <p>Rather not tell:</p>
+    <input type="radio" name="gender" id="other" value="rather not tell">
+    </div>
+
+    <br>
+    <span id="sex"></span>
+
+    <p>Enter your official E-mail address:</p>
+    <input type="email" id="email" placeholder="E-mail"><br>
+    <span id="e-mail"></span>
+
+    <p>Input your phone number here</p>
+    <input type="tel" name="phone" placeholder="Phone Number" id="phone-no" required>
+    <span id="phone-message"></span>
+
+    <input type="file" name="file_upload" accept=".pdf,.doc,.docx" required>
+
+    <select name="role" required>
+      <option value="">Select role</option>
+      <option value="software engineer">Software Engineer</option>
+      <option value="data analyst">Data Analyst</option>
+      <option value="internship">Internships</option>
+      <option value="other">Other</option>
+    </select>
+
+    <p>This is for you if you selected "other"</p>
+    <input type="text" name="other" id="other">
+
+    <button type="submit" class="fist-in" style="margin: 15px;">Apply</button>
+  </form>
+</div>
+</body>
+</html>
+
+
+
+
+
